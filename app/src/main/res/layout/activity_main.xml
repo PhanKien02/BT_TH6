@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/gradient">
+
+    <RelativeLayout
+        android:id="@+id/forgot"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="30dp"
+            android:text="Sign in"
+            android:textColor="#fff"
+            android:textSize="15pt"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/txtsu_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="46dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/botron"
+            android:hint="UserName"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:textColor="#000000"
+            android:textColorHint="@color/textcolor"
+            android:textSize="10pt" />
+
+        <EditText
+            android:id="@+id/txtsu_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="125dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/botron"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:textColor="#000"
+            android:textColorHint="@color/textcolor"
+            android:textSize="10pt" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_below="@+id/txtsu_password"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="40dp"
+            android:minHeight="100dp">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginLeft="30dp"
+                android:minHeight="50dp"
+                android:text="Remember me"
+                android:textColor="#FFFFFF"
+                android:buttonTint="#E10A0A"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginLeft="40dp"
+                android:background="@android:color/transparent"
+                android:text="Forgot Password"
+                android:textColor="#000000"
+                android:textSize="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/button"
+            android:layout_marginLeft="-30dp"
+            android:layout_marginTop="36dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/button2"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="70dp"
+                android:gravity="center"
+                android:text="  Already have a acccout"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/txt_singin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/button2"
+                android:layout_marginLeft="20dp"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:text=" Sing in"
+                android:textColor="#0C1961" />
+        </LinearLayout>
+
+        <android.widget.Button
+            android:id="@+id/button"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="29dp"
+            android:layout_marginTop="288dp"
+            android:background="@drawable/botron_button"
+            android:text="Sing up"
+            android:textColor="@color/textcolor" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="345dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_confirmpassword"
+            android:layout_marginTop="19dp"
+            android:gravity="center"
+            android:textColor="#C30707"
+            android:textSize="18dp" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
